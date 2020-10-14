@@ -1,0 +1,9 @@
+---
+# defaults
+
+hashicorp_package: []
+
+hashicorp_packages_additional: []
+
+hashicorp_repo: '{{ hashicorp_repo_default }}'
+hashicorp_gpg: '{{ hashicorp_gpg_default }}'

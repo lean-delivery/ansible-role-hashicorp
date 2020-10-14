@@ -1,0 +1,14 @@
+---
+- name: Become block
+  block:
+    - name: Install software
+      package:
+        name: '{{ hashicorp_package }}'
+        state: present
+      register: installed_package
+      retries: 30
+      until: installed_package is succeeded
+  become: true
+
+- name: force all notified handlers to run
+  meta: flush_handlers

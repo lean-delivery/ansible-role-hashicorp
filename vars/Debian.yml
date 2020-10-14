@@ -1,0 +1,10 @@
+---
+hashicorp_packages_base:
+  - apt-transport-https
+  - ca-certificates
+  - software-properties-common
+
+hashicorp_repo_default: >-
+      deb [arch=amd64] https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main
+
+hashicorp_gpg_default: 'https://apt.releases.hashicorp.com/gpg'
