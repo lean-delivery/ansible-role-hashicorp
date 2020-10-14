@@ -10,11 +10,11 @@ lint:
   options:
     config-file: .yamllint
 platforms:
-  - name: test-docker-centos7-docker
-    image: leandelivery/docker-systemd:centos7
-    privileged: true
-    groups:
-      - rhel_family
+  # - name: test-docker-centos7-docker
+  #   image: leandelivery/docker-systemd:centos7
+  #   privileged: true
+  #   groups:
+  #     - rhel_family
   - name: test-docker-ubuntu1804-docker
     image: leandelivery/docker-systemd:ubuntu-18.04
     privileged: true
